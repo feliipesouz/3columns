@@ -1,0 +1,171 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*Estilo para desktop*/
+@media (max-width: 1400px) {
+  #body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 52%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+  }
+
+  .block-img img{
+    width: 30%;
+    height: 30%;
+  }
+
+  .block:first-child {
+    border-radius: 0.4rem 0 0 0.4rem;
+  }
+
+  .block:last-child {
+    border-radius: 0 0.4rem 0.4rem 0;
+  }
+
+  .block-title .title { 
+    padding: 1.4rem 0;
+    font-size: 1.8rem;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+  }
+
+  .block-text .content {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 1,6rem;
+    padding-bottom: 2rem;
+    margin: 0 0.1rem 0 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.2rem;
+    font-size: 0.8rem;/*0.9*/
+    font-weight: normal;
+  }
+
+  .btn {
+    background-color: hsl(0, 0%, 95%);
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.2rem;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background: none;
+    border: 2px solid white;
+  }
+
+  .btn a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    padding: 1rem 1.16rem;
+  }
+
+  .btn a:hover {
+    color: white;
+  }
+
+  .a-sedans, .block-sedans {
+    color: hsl(31, 77%, 52%);
+  }
+
+  .a-suvs {
+    color: hsl(184, 100%, 22%);
+  }
+
+  .a-luxury {
+    color: hsl(179, 100%, 13%);
+  }
+
+  .block-sedans{
+    background-color: hsl(31, 77%, 52%);
+  } 
+
+  .block-suvs {
+    background-color: hsl(184, 100%, 22%);
+  } 
+
+  .block-luxury {
+    background-color: hsl(179, 100%, 13%);
+  }
+
+}
+
+
+/*Estilo para smartphone*/
+@media (max-width: 375px) {
+
+  .container {
+    padding: 5rem 0;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+  }
+
+  .block {
+    width: 88%;
+    padding: 13%;
+  }
+
+  .block-img img{
+    width: 25%;
+    height: 25%;
+  }
+
+  .block:first-child {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .block:last-child {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .block-title {
+    padding: 0.3rem 0;
+    font-size: 3rem; 
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+  }   
+
+  .block-text .content {
+    padding: 0;
+    /* color: hsla(0, 0%, 100%, 0.75); */
+    line-height: 2rem;
+    margin: auto 0.5rem auto 0;
+    font-size: 15px;
+  }
+
+  .btn {
+    height: 3.2rem;
+    width: 9rem;
+    margin-top: 1.8rem;
+  }
+
+  .btn a {
+    padding: 0.9rem 1.2rem;;
+    font-size: 1rem;
+  }
+
+
+}
